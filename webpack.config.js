@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './src/main/resources/app.js',
+    entry: './src/main/resources/app.jsx',
     output: {
       path: __dirname + '/src/main/resources/static', 
       filename: 'bundle.js' 
@@ -7,7 +7,7 @@ module.exports = {
     module: {
         loaders: [
           {
-            test: /.js$/,
+            test: /.(js|jsx)$/,
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
